@@ -12,8 +12,8 @@
 • If the person is age 65 or older, print a message that the person is an elder.*/
 
 /* let age: (string | null) = prompt("Please enter your Age"); */
-let age: (string | null) = '20';//prompt doesn' work
-let numberedAge: number = Number(age);
+let age1: (string | null) = '20';//prompt doesn' work
+let numberedAge: number = Number(age1);
 
 if (numberedAge !== 0) {
     if (numberedAge < 2) {

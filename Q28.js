@@ -1,3 +1,4 @@
+"use strict";
 /* Stages of Life: Write an if-else chain that determines a person’s stage of life. Set a value for the variable age, and then:
 • If the person is less than 2 years old, print a message that the person is a baby.
 
@@ -11,8 +12,8 @@
 
 • If the person is age 65 or older, print a message that the person is an elder.*/
 /* let age: (string | null) = prompt("Please enter your Age"); */
-var age = '20'; //prompt doesn' work
-var numberedAge = Number(age);
+let age1 = '20'; //prompt doesn' work
+let numberedAge = Number(age1);
 if (numberedAge !== 0) {
     if (numberedAge < 2) {
         console.log('person is a baby.');

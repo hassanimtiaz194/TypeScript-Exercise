@@ -15,11 +15,11 @@ function show_magicians(magician: string[]) {
     })
 }
 
-const magician_names: string[] = ['Dynamo', 'David Copperfield', 'Paul Daniels', 'Harry Houdini'];
+const magician_names2: string[] = ['Dynamo', 'David Copperfield', 'Paul Daniels', 'Harry Houdini'];
 const new_magician_names: string[] = [];
-make_great(magician_names, new_magician_names);
+make_great(magician_names2, new_magician_names);
 console.log("old magician\n==================================")
-show_magicians(magician_names)
+show_magicians(magician_names2)
 console.log("new magician\n==================================")
 show_magicians(new_magician_names)
 

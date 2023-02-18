@@ -18,7 +18,7 @@ function make_album(aName: string, aTitle: string, tracks: number = 0) {
     }
     return album;
 }
-const a1: {} = make_album('Atif Aslam', 'Atif Aslam Album')
-const a2: {} = make_album('Ali Zafar', 'Jhoom', 6)
-console.log(a1)
-console.log(a2)
+const a8: {} = make_album('Atif Aslam', 'Atif Aslam Album')
+const a9: {} = make_album('Ali Zafar', 'Jhoom', 6)
+console.log(a8)
+console.log(a9)

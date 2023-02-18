@@ -1,3 +1,4 @@
+"use strict";
 /*Alien Colors #3: Turn your if-else chain from Exercise 5-4 into an if-else chain.
 • If the alien is green, print a message that the player earned 5 points.
 
@@ -7,8 +8,8 @@
 
 • Write three versions of this program, making sure each message is printed for the appropriate color alien.*/
 //version 1
-var alien_color = ['green', 'yellow', 'red'];
-alien_color.map(function (value) {
+const alien_color4 = ['green', 'yellow', 'red'];
+alien_color4.map((value) => {
     if (value === 'green') {
         console.log('just earned 5 points for shooting the alien');
     }
@@ -20,11 +21,11 @@ alien_color.map(function (value) {
     }
 });
 //version 2
-for (var i = 0; i < alien_color.length; i++) {
-    if (alien_color[i] === 'green') {
+for (let i = 0; i < alien_color4.length; i++) {
+    if (alien_color4[i] === 'green') {
         console.log('just earned 5 points for shooting the alien');
     }
-    else if (alien_color[i] === 'yellow') {
+    else if (alien_color4[i] === 'yellow') {
         console.log('just earned 10 points for shooting the alien');
     }
     else {
@@ -32,7 +33,7 @@ for (var i = 0; i < alien_color.length; i++) {
     }
 }
 //version 2
-alien_color.forEach(function (alien) {
+alien_color4.forEach((alien) => {
     if (alien === 'green') {
         console.log('just earned 5 points for shooting the alien');
     }

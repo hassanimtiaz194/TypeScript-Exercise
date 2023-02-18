@@ -7,8 +7,8 @@
 
 • Write three versions of this program, making sure each message is printed for the appropriate color alien.*/
 //version 1
-const alien_color: string[] = ['green', 'yellow', 'red'];
-alien_color.map((value) => {
+const alien_color4: string[] = ['green', 'yellow', 'red'];
+alien_color4.map((value) => {
     if (value === 'green') {
         console.log('just earned 5 points for shooting the alien')
     } else if (value === 'yellow') {
@@ -18,17 +18,17 @@ alien_color.map((value) => {
     }
 })
 //version 2
-for (let i = 0; i < alien_color.length; i++) {
-    if (alien_color[i] === 'green') {
+for (let i = 0; i < alien_color4.length; i++) {
+    if (alien_color4[i] === 'green') {
         console.log('just earned 5 points for shooting the alien')
-    } else if (alien_color[i] === 'yellow') {
+    } else if (alien_color4[i] === 'yellow') {
         console.log('just earned 10 points for shooting the alien')
     } else {
         console.log('just earned 15 points for shooting the alien')
     }
 }
 //version 2
-alien_color.forEach((alien) => {
+alien_color4.forEach((alien) => {
     if (alien === 'green') {
         console.log('just earned 5 points for shooting the alien')
     } else if (alien === 'yellow') {

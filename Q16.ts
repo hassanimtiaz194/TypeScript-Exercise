@@ -26,7 +26,7 @@ invitee.map(function (n, index) {
 });
 // invitaion Rejected
 console.log('First invitation Rejection\n=======================')
-const newIndex: number[] = invitee.map(function (n, index) {
+const newIndex: (number|undefined)[] = invitee.map(function (n, index) {
     if (message1[index].toLowerCase() === 'invitation rejected') {
         console.log(`${n} said, ${message1[index]}`);
         return index;
@@ -37,8 +37,8 @@ const newIndex: number[] = invitee.map(function (n, index) {
 const filteredIndex: (number | undefined)[] = newIndex.filter((x) => {
     return x !== undefined;
 });
-let numb: number = filteredIndex[0];
-invitee.splice(numb, 1, "Elon Musk")
+let numb16: (number |any) = filteredIndex[0];
+invitee.splice(numb16, 1, "Elon Musk")
 console.log(`new invitee list ${invitee}`);
 
 // 2nd invitaion Send

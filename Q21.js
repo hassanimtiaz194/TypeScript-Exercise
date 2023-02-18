@@ -1,6 +1,7 @@
+"use strict";
 /* They think of something you could store in a TypeScript Object.
 Write a program that creates Objects containing these items. */
-var address = {
+const address = {
     city: "Islamabad",
     area: "DHA Phase 1",
     sector: 'B',

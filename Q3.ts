@@ -1,7 +1,7 @@
 /* Name Cases: Store a person’s name in a variable,
 and then print that person’s name in lowercase, uppercase, and titlecase. */
 
-const name2: string = 'Hassan Imtiaz';
+const uname: string = 'Hassan Imtiaz';
 
 function titlecase(name2: string) {
     const value1: string[] = name2.toLowerCase().split(' ')
@@ -10,6 +10,6 @@ function titlecase(name2: string) {
     })
     return value2.join(' ');
 }
-console.log(`lowercase: ${name2.toLowerCase()}`);
-console.log(`uppercase: ${name2.toUpperCase()}`);
-console.log(`titlecase: ${titlecase(name2)}`);
+console.log(`lowercase: ${uname.toLowerCase()}`);
+console.log(`uppercase: ${uname.toUpperCase()}`);
+console.log(`titlecase: ${titlecase(uname)}`);

@@ -18,7 +18,7 @@ function car_details(manufacturer: string, model: number, optional: string[] = [
     }
     return obj;
 }
-const a1 = car_details('Toyota', 2021)
-const a2 = car_details('Honda', 2023, ['red', 'alloy'])
-console.log(a1)
-console.log(a2)
+const a5 = car_details('Toyota', 2021)
+const a6 = car_details('Honda', 2023, ['red', 'alloy'])
+console.log(a5)
+console.log(a6)

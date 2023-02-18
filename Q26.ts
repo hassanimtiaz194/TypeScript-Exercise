@@ -4,8 +4,8 @@
 • If the alien’s color isn’t green, print a statement that the player just earned 10 points.
 
 • Write one version of this program that runs the if block and another that runs the else block. */
-const alien_color: string[] = ['green', 'yellow', 'red'];
-alien_color.map((value) => {
+const alien_color3: string[] = ['green', 'yellow', 'red'];
+alien_color3.map((value) => {
     if (value==='green'){
         console.log('just earned 5 points for shooting the alien')
     }else{

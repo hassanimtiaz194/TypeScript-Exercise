@@ -12,68 +12,68 @@ print a message to that person letting them know you’re sorry you can’t invi
 • Remove the last two names from your list, so you have an empty list. 
 Print your list to make sure you actually have an empty list at the end of your program. */
 
-const invitee: string[] = ['Steve Jobs', 'Bill gates', 'Larry Page']
-const message: string[] = ['invitation Accepted', 'invitation Accepted', 'invitation Rejected']
-const message2: string[] = ['invitation Accepted', 'invitation Accepted', 'invitation Accepted']
-const message3: string[] = ['invitation Accepted', 'invitation Accepted', 'invitation Rejected', 'invitation Accepted', 'invitation Accepted', 'invitation Accepted']
-const message4: string[] = ['You are still Invited', 'You are still Invited']
+const invitee17: string[] = ['Steve Jobs', 'Bill gates', 'Larry Page']
+const message17: string[] = ['invitation Accepted', 'invitation Accepted', 'invitation Rejected']
+const message172: string[] = ['invitation Accepted', 'invitation Accepted', 'invitation Accepted']
+const message173: string[] = ['invitation Accepted', 'invitation Accepted', 'invitation Rejected', 'invitation Accepted', 'invitation Accepted', 'invitation Accepted']
+const message174: string[] = ['You are still Invited', 'You are still Invited']
 // First invitaion Send
 console.log('First invitation sended\n=======================')
-invitee.map(function (n, index) {
-    console.log(`${n} said, ${message[index]}`);
+invitee17.map(function (n, index) {
+    console.log(`${n} said, ${message17[index]}`);
 });
 // invitaion Accepted
 console.log('First invitation Accepted\n=======================')
-invitee.map(function (n, index) {
-    if (message[index].toLowerCase() === 'invitation accepted')
-        console.log(`${n} said, ${message[index]}`);
+invitee17.map(function (n, index) {
+    if (message17[index].toLowerCase() === 'invitation accepted')
+        console.log(`${n} said, ${message17[index]}`);
 });
 // invitaion Rejected
 console.log('First invitation Rejection\n=======================')
-const newIndex: number[] = invitee.map(function (n, index) {
-    if (message[index].toLowerCase() === 'invitation rejected') {
-        console.log(`${n} said, ${message[index]}`);
+const newIndex17: (number | undefined)[] = invitee17.map(function (n, index) {
+    if (message17[index].toLowerCase() === 'invitation rejected') {
+        console.log(`${n} said, ${message17[index]}`);
         return index;
         //console.log(n)
     }
     // return n;
 });
-const filteredIndex: (number | undefined)[] = newIndex.filter((x) => {
+const filteredIndex17: (number | undefined)[] = newIndex17.filter((x) => {
     return x !== undefined;
 });
-let numb: number = filteredIndex[0];
-invitee.splice(numb, 1, "Elon Musk")
-console.log(`new invitee list ${invitee}`);
+let numb17: (number | any) = filteredIndex17[0];
+invitee17.splice(numb17, 1, "Elon Musk")
+console.log(`new invitee list ${invitee17}`);
 
 // 2nd invitaion Send
 console.log('Second invitation sended\n=======================')
-invitee.map(function (n, index) {
-    console.log(`${n} said, ${message2[index]}`);
+invitee17.map(function (n, index) {
+    console.log(`${n} said, ${message172[index]}`);
 });
 console.log('Bigger table is available\n=======================')
-invitee.unshift('Jeff Bezos')
-invitee.splice((invitee.length) / 2, 0, 'Jack Dorsey')
-invitee.push('Mark Zuckerberg');
-console.log(`3rd invitaion list ${invitee}`)
+invitee17.unshift('Jeff Bezos')
+invitee17.splice((invitee17.length) / 2, 0, 'Jack Dorsey')
+invitee17.push('Mark Zuckerberg');
+console.log(`3rd invitaion list ${invitee17}`)
 
 console.log('3rd invitation sended\n=======================')
-invitee.map(function (n, index) {
-    console.log(`${n} said, ${message3[index]}`);
+invitee17.map(function (n, index) {
+    console.log(`${n} said, ${message173[index]}`);
 });
 console.log('Can invite only two people\n=======================')
-for (let i = invitee.length; invitee.length > 2; i--) {
-    console.log(`sorry due to unavailability i can invitee i can invite two peoples ${invitee.pop()} you are univited`)
+for (let i = invitee17.length; invitee17.length > 2; i--) {
+    console.log(`sorry due to unavailability i can invitee i can invite two peoples ${invitee17.pop()} you are univited`)
 }
 console.log('4th invitation sended\n=======================')
-invitee.map(function (n, index) {
-    console.log(`${n} said, ${message4[index]}`);
+invitee17.map(function (n, index) {
+    console.log(`${n} said, ${message174[index]}`);
 });
 
 console.log('emptying list \n=======================')
-for (let i = invitee.length; invitee.length > 0; i--) {
-    console.log(`${invitee.pop()} you are univited`)
-    if (invitee.length === 0) {
+for (let i = invitee17.length; invitee17.length > 0; i--) {
+    console.log(`${invitee17.pop()} you are univited`)
+    if (invitee17.length === 0) {
         console.log('list is now empty')
     }
 }
-console.log(invitee);
+console.log(invitee17);
